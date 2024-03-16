@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { selectCardById } from "./cardsSlice";
 
 export default function Card({ id }) {
-  const card = useSelector(selectCardById(id)); 
+  const card = useSelector(selectCardById(id));
   const [flipped, setFlipped] = useState(false);
 
   return (
