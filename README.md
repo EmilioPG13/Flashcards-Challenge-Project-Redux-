@@ -1,10 +1,10 @@
-**Codecademy Flashcards Starter Challenge**
+# **Codecademy Flashcards Starter Challenge**
 
-**Overview**
+## **Overview**
 
 This project was developed as a part of Codecademy's Full-Stack Engineer Path curriculum.
 
-**Objectives**
+## **Objectives**
 
 The primary goal is to apply knowledge of React-Redux and Redux Toolkit. The objectives include:
 
@@ -15,15 +15,17 @@ The primary goal is to apply knowledge of React-Redux and Redux Toolkit. The obj
 - Using **useDispatch()** to dispatch actions to the store for rendering updates.
 - Comprehending the Redux workflow from view to middleware to Action (dispatch) to view.
 
-**Execution**
+---
+
+## **Execution**
 
 To launch the app, run `npm start` in the project root, and it will be available on port 3000.
 
-**State Configuration**
+### **State Configuration**
 
 The application's state is entirely normalized, with slices for topics, quizzes, and cards.
 
-**Navigation Routes**
+### **Navigation Routes**
 
 - `/new-topic` – A form to create a new topic.
 - `/topics` – An index of all topics.
@@ -32,7 +34,7 @@ The application's state is entirely normalized, with slices for topics, quizzes,
 - `/quizzes` – An index of all quizzes.
 - `/quizzes/:quizId` – A dedicated page for each quiz.
 
-**Testing Procedures**
+### **Testing Procedures**
 
 1. Generate topics.
 2. Create quizzes.
