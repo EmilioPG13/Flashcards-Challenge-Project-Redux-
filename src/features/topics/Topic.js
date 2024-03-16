@@ -4,10 +4,9 @@ import { selectTopics } from "./topicsSlice";
 import { selectQuizzes } from "../quizzes/quizzesSlice";
 import { Link, useParams, Navigate } from "react-router-dom";
 import ROUTES from "../../app/routes";
-// import selectors
 
 export default function Topic() {
-  const topics = useSelector(selectTopics);  
+  const topics = useSelector(selectTopics);
   const quizzes = useSelector(selectQuizzes);
   const { topicId } = useParams();
   const topic = topics[topicId];
@@ -15,9 +14,9 @@ export default function Topic() {
   if(!topic) {
     return <Navigate to={ROUTES.topicsRoute()} replace/>
   }
-  
-  const quizzesForTopic = topic.quizIds.map((quizId) => quizzes[quizId]);
 
+  const quizzesForTopic = topic.quizIds.map((quizId) => quizzes[quizId]);
+  
   return (
     <section>
       <img src={topic.icon} alt="" className="topic-icon" />
